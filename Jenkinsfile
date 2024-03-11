@@ -36,11 +36,12 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh """
-                    echo  "Here I wrote shell script"
-                    echo "$GREETING"
-                    #sleep 10
-                """
+                echo 'Deploy'
+                // sh """
+                //     echo  "Here I wrote shell script"
+                //     echo "$GREETING"
+                //     #sleep 10
+                // """
             }
         }
         // stage('check params'){
